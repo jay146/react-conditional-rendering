@@ -4,13 +4,10 @@ import Form from "./Form";
 var isLogged = true;
 
 function App() {
-  return isLogged ? (
-    <h1>
-      used ternary operator for displaying function as an operator if user is
-      logged in{" "}
-    </h1>
-  ) : (
-    <Form />
+  return (
+    <div className="container">
+      <Form isRegistered={isLogged} />;
+    </div>
   );
 }
 
