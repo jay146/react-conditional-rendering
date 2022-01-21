@@ -1,10 +1,14 @@
 import React from "react";
 import Form from "./Form";
 
-var isLogged = false;
+var isLogged = true;
 
 function App() {
-  return <Form isRegistered={isLogged} />;
+  return (
+    <div className="container">
+      <Form isRegistered={isLogged} />;
+    </div>
+  );
 }
 
 export default App;
