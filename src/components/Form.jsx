@@ -1,13 +1,15 @@
 import React from "react";
+import Input from "./Input";
 
 function Form() {
   return (
-    <form className="form">
-      <input type="text" placeholder="Username" />
-      <input type="password" placeholder="Password" />
-      <input type="password" placeholder="Confirm Password" />
-      <button type="submit">Register</button>
-    </form>
+    <div>
+      <Input type="text" placeholder="Enter Username" />
+      <Input type="password" placeholder="Enter Password" />
+      <button type="submit" className="btn btn-primary">
+        Login
+      </button>
+    </div>
   );
 }
 
